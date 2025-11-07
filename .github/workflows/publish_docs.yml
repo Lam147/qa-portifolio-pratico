@@ -1,0 +1,56 @@
+name: Deploy Portfolio Documentation (CD)
+
+on:
+  push:
+    branches: ["main", "master"]
+  
+  # Permite o acionamento manual na aba Actions
+  workflow_dispatch:
+
+# Permissões necessárias para o deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite que apenas um deployment seja executado por vez
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Esta é a sua etapa de Construção (Build)
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      # Esta action constroi um site a partir dos seus arquivos Markdown
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      # Copia todos os seus arquivos de documentacao para a pasta de build
+      - name: Copiar Documentacao para Build
+        run: |
+          mkdir docs_build
+          cp -r Teste_Formulario_Parabank docs_build/
+          cp README.md docs_build/
+          
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # A pasta que sera implantada no GitHub Pages
+          path: 'docs_build'
+
+  # Esta é a sua etapa de Deployment (CD)
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
