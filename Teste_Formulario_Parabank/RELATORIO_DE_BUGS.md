@@ -22,14 +22,14 @@ Conta criada e autenticada com sucesso, aceitando a senha fraca ('123456').
 **Resultado ESPERADO:**
 Exibir mensagem de erro de validação de segurança, exigindo maior complexidade (ex: no mínimo 8 caracteres, com números e letras).
 
-**Evidência:** [NÃO ESQUECER DE ANEXAR A IMAGEM/GIF DO BUG NESTA PASTA]
+**Evidência:** [Screenshot do Bug 001](EVIDENCIAS/bug_001_senha_fraca.png)
 
 ---
 
 ### Defeito #002: Erro Interno ao Deixar Campo Obrigatório Vazio
 
 **Módulo:** Cadastro de Usuário (Register)
-**Severidade:** Média (Prejudica a usabilidade e expõe erro de sistema.)
+**Severidade:** Média (Prejudica a usabilidade e expõe erro de sistema.)**Evidência:** [NÃO ESQUECER DE ANEXAR A IMAGEM/GIF DO BUG NESTA PASTA]
 
 **Passos para Reproduzir:**
 1. Acessar a página de Cadastro (/register.htm).
@@ -42,6 +42,6 @@ O sistema exibe a mensagem de erro: "An internal error has occurred and has been
 **Resultado ESPERADO:**
 O sistema deve exibir uma mensagem de validação amigável e clara, específica para o campo, como: "Last Name é um campo obrigatório."
 
-**Evidência:** [NÃO ESQUECER DE ANEXAR A IMAGEM/GIF DO BUG NESTA PASTA]
+**Evidência:** [Screenshot do Bug 001](EVIDENCIAS/bug_001_senha_fraca.png)
 
 ---
