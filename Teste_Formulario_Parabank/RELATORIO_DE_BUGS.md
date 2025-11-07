@@ -22,7 +22,7 @@ Conta criada e autenticada com sucesso, aceitando a senha fraca ('123456').
 **Resultado ESPERADO:**
 Exibir mensagem de erro de validação de segurança, exigindo maior complexidade (ex: no mínimo 8 caracteres, com números e letras).
 
-**Evidência:** [Screenshot do Bug 001](EVIDENCIAS/bug_001_senha_fraca.png)
+Evidência: [Screenshot do Bug 001](EVIDENCIAS/bug_001_senha_fraca.png)
 
 ---
 
@@ -42,6 +42,6 @@ O sistema exibe a mensagem de erro: "An internal error has occurred and has been
 **Resultado ESPERADO:**
 O sistema deve exibir uma mensagem de validação amigável e clara, específica para o campo, como: "Last Name é um campo obrigatório."
 
-**Evidência:** [Screenshot do Bug 002](EVIDENCIAS/bug_002_erro_interno.png)
+Evidência: [Screenshot do Bug 002](EVIDENCIAS/bug_002_erro_interno.png)
 
 ---
