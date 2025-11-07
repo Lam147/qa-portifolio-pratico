@@ -19,6 +19,5 @@ O processo de teste é documentado em Markdown, seguindo estas etapas:
 | Projeto | Alvo do Teste | Foco Principal | Status |
 | :--- | :--- | :--- | :--- |
 | **Teste_Formulario_Parabank** | Aplicação pública de demonstração (Login/Cadastro) | Validação de Formulários, Regras de Negócio e Mensagens de Erro. | Concluído |
-| **Teste_E_Commerce_Flow** | (Próximo Alvo) | Fluxo de Compra, Carrinho, Filtros e Usabilidade. | Pendente |
 
 ---
