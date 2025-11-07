@@ -25,7 +25,7 @@ O item "Bike Light", que foi removido, aparece novamente na tela de 'Overview' e
 **Resultado ESPERADO:**
 O item removido na etapa 4 não deve mais aparecer no carrinho e não deve ser cobrado na tela de Overview.
 
-**Evidência:** [Link para a evidência que será colocada na pasta EVIDENCIAS/]
+**Evidência:** [Screenshot do Bug 001 - Lógica](EVIDENCIAS/bug_001_carrinho_reaparece.png)
 
 ---
 
@@ -44,6 +44,6 @@ A imagem do produto "Sauce Labs Bolt T-Shirt" não carrega e exibe o ícone de i
 **Resultado ESPERADO:**
 Todas as imagens de produtos devem carregar corretamente.
 
-**Evidência:** [Link para a evidência que será colocada na pasta EVIDENCIAS/]
+**Evidência:** [Screenshot do Bug 002 - Visual](EVIDENCIAS/bug_002_imagem_quebrada.png)
 
 ---
