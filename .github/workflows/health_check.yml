@@ -10,11 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Verifica se o Site Parabank esta Acessivel (Health Check)
+    - name: Verifica se o Site Parabank esta Acessivel (Health Check 1)
       run: |
-        echo "Tentando acessar a URL do alvo de teste..."
+        echo "Tentando acessar a URL do alvo de teste Parabank..."
         # Tenta acessar a URL. O comando 'curl' retorna 0 (sucesso) se receber uma resposta 2xx/3xx.
         curl -fsS --retry 3 --max-time 10 'https://parabank.parasoft.com/parabank/index.htm'
         
-    - name: Health Check OK
+    - name: Health Check Parabank OK
       run: echo "Sucesso! O site de demonstracao Parabank esta online e pronto para teste manual."
+      
+    - name: Verifica se o Site Swag Labs esta Acessivel (Health Check 2)
+      run: |
+        echo "Tentando acessar a URL do alvo de teste E-commerce..."
+        curl -fsS --retry 3 --max-time 10 'https://www.saucedemo.com/'
+        
+    - name: Health Check E-commerce OK
+      run: echo "Sucesso! O site Swag Labs esta online."
